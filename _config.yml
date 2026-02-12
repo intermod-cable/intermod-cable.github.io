@@ -31,6 +31,10 @@ github_username: intermod-cable
 remote_theme: lvntky/low@v1.0.2
 plugins:
   - jekyll-feed
+  
+# Feed settings
+feed:
+  path: rss.xml
 
 # Exclude from processing.
 # The following items will not be processed, by default.
