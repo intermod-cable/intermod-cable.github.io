@@ -28,7 +28,7 @@ github_username: intermod-cable
 
 # Build settings
 #theme: minima
-remote_theme: lvntky/low@master
+remote_theme: lvntky/low@v1.1.1
 plugins:
   - jekyll-feed
   
