@@ -1,0 +1,10 @@
+<p style="text-align:left; margin-bottom:1ch;">
+  {% assign posts_sorted = include.posts | default: site.posts | sort: "date" | reverse %}
+  {% for post in posts_sorted %}
+    {{ post.date | date: "%Y-%m-%d" }}:
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a><br>
+    {% if post.in_progress == true %}
+      <span>[in progress]</span>
+    {% endif %}
+  {% endfor %}
+</p>
